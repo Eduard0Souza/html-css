@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando imagens 2</title>
+    <style>
+        div.quadrado{
+            width:900px; 
+            height:500px;
+            background-color: aliceblue;
+            border: 2px solid black;
+            margin: 5px;
+        }
+        div#q1{
+            background-image: url(imagens/pattern001.png);
+            background-repeat: repeat;
+        }
+        div#q2{
+            background-image: url(imagens/pattern001.png);
+            background-repeat: no-repeat;
+            
+        }
+        div#q3{
+            background-image: url(imagens/pattern001.png);
+            background-repeat: repeat-x;
+            
+        }
+        div#q4{
+            background-image: url(imagens/pattern001.png);
+            background-repeat: repeat-y;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Teste de Aplicação de fundo</h1>
+
+    <div class="quadrado" id="q1">
+        <h1 style="color: aliceblue; text-align: center;"> A função de repetir esta ativa</h1>
+    </div>
+
+    <div class="quadrado" id="q2">
+        <h1 style="color: rgb(160, 57, 9);text-align: center;" >Repetição desativada</h1>
+    </div>
+
+    <div class="quadrado" id="q3">
+        <h1 style="color: rgb(235, 224, 219); text-align: center;">Repetição apenas na horizontal</h1>
+    </div>
+    <div class="quadrado" id="q4">
+        <h1 style="color: rgb(218, 41, 17); text-align: center;">Repetição apenas na Vertical</h1>
+
+    </div>
+    
+</body>
+</html>
