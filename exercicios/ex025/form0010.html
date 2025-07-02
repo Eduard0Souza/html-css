@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-image: linear-gradient(to left, rgba(0, 0, 255, 0.336), rgba(0, 255, 242, 0.308));
+            text-align: center;
+           
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-variant: small-caps;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.445), rgba(0, 0, 255, 0.418));
+            color: white;
+            margin-bottom: 15px;
+        }
+        fieldset{
+          margin: 0px 25px;
+            background-color: white;
+            border-radius: 5px;
+        }
+        legend{
+            background-color: black;
+            color:white;
+            font-weight: bold;
+            font-variant: small-caps;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        label{
+            font-weight: bold;
+        }
+        input{
+            border-radius: 5px;
+            padding: 2px;
+            margin: 2px;
+        }
+        textarea{
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio do Copilot Sobre Formulários</h1>
+  <form action="#" method="post" autocomplete="on">
+      
+      <fieldset>
+          <legend>Dados do Usuário</legend>
+         <p>
+          <label for="inome">Nome</label>
+          <input type="text" name="nome" id="inome" placeholder="nome completo" autocomplete="name" required maxlength="50">
+         </p>
+         <p>
+          <label for="iemail">Email</label>
+          <input type="email" name="email" id="iemail" placeholder="xxxxx@xxxx" required autocomplete="email">
+         </p>
+         <P>
+          <label for="imsg">Mensagem</label><br>
+          <textarea name="msg" id="imsg" cols="30" rows="5" placeholder="Deixe sua mensagem"></textarea>
+         </P>
+          
+         <p>
+      
+          Você gostaria de receber novidades?
+          </p>
+          <input type="radio" name="escolha" id="isim" checked><label for="isim">Sim</label> <br>
+          <input type="radio" name="escolha" id="inao"><label for="inao">Não</label><br>
+          <input type="submit" value="Enviar">
+      
+      </fieldset>
+  </form>
+
+    
+</body>
+</html>
