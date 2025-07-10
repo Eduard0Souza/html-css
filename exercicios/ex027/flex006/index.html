@@ -5,22 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexible box</title>
     <style>
+        
+        body{
+            background-color: blue;
+        }
+
         div.container{
-            background-color: orange;
+            background-color: white;
             display: flex;
             flex-flow: row wrap;
             align-content: space-evenly;
-            height: 400px;
-            justify-content: center;
+           padding: 10px;
+            justify-content: space-evenly;
+            border-radius: 10px;
         
         }
         div.item{
-            padding: 40px;
-            background-color: lightblue;
-            border: 1px solid black;
+            height: 40px;
+            width: 40px;
+            padding: 30px;
+            background-color: rgb(255, 230, 7);
+            border: 2px solid blue;
             text-align: center;
-            
-            
+            border-radius: 10px;
+            align-self: center;
+                  
         }
     </style>
 </head>
@@ -33,13 +42,12 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
-        <div class="item">H</div>
-        <div class="item">I</div>
-        <div class="item">J</div>
-        <div class="item">L</div>
-        <div class="item">M</div>
-        <div class="item">N</div>
+
+        
+       
         
     </div>
+    
+    
 </body>
 </html>
