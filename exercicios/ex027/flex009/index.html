@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        div.container{
+            background-color: orange;
+            display: flex;
+            flex-flow: row nowrap;
+            
+            height: 120px;
+           
+            align-items: center;
+        
+        }
+        div.item{
+            height: 80px;           
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+                   
+            
+        }
+        #i1{
+            flex-basis: 150px;
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+        #i2{
+            flex-basis: 150px;
+            flex-shrink: 0;
+            flex-grow: 2;
+        }
+        #i3{
+            flex-basis: 150px;
+            flex-shrink: 2;
+            flex-grow: 1;  
+        }
+        #i4{
+            flex-basis: 150px;
+            flex-grow: 1;
+            flex-shrink: 0;
+        }
+        #i5{
+            flex-basis: 150px;
+            flex-grow: 0;
+            flex-shrink: 2;
+
+        }
+        #i6{
+            flex-basis: 150px;
+            flex-grow: 2;
+            flex-shrink: 1;
+            
+        }
+        #i7{
+            flex-basis: 150px;
+            flex-grow: 2;
+            flex-shrink: 1;
+        }
+        #i8{
+            flex-basis: 150px;
+            flex-grow: 1;
+            flex-shrink: 0;
+
+        }
+        #i9{
+            flex-basis: 150px;
+            flex-grow: 0;
+            flex-shrink: 2;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i1"><p>
+            flex-basis:150px <br>
+            flex-grow: 0 <br>
+            flex-shrink: 1
+        </p></div>
+        <div class="item" id="i2"><p>
+            flex-basis:150px <br>
+            flex-grow: 2 <br>
+            flex-shrink: 0
+        </p></div>
+        <div class="item" id="i3"><p>
+            flex-basis:150px <br>
+            flex-grow: 1 <br>
+            flex-shrink: 2
+        </p></div>       
+    </div>
+    <div class="container">
+        <div class="item" id="i4"><p>
+            flex-basis:150px <br>
+            flex-grow: 1 <br>
+            flex-shrink: 0</div>
+        <div class="item" id="i5"><p>
+            flex-basis:150px <br>
+            flex-grow: 0 <br>
+            flex-shrink: 2</div>
+        <div class="item" id="i6"><p>
+            flex-basis:150px <br>
+            flex-grow: 2 <br>
+            flex-shrink: 1</div>       
+    </div>
+    <div class="container">
+        <div class="item" id="i7"><p>
+            flex-basis:150px <br>
+            flex-grow: 2 <br>
+            flex-shrink: 1</div>
+        <div class="item" id="i8"><p>
+            flex-basis:150px <br>
+            flex-grow: 1 <br>
+            flex-shrink: 0</div>
+        <div class="item" id="i9"><p>
+            flex-basis:150px <br>
+            flex-grow: 0 <br>
+            flex-shrink: 2</div>       
+    </div>
+    <h1>Por Padrão</h1>
+    <p>flex-shrink: 1 (pode encolher, apenas atibuindo o valor "0" que ele ficará proibido de encolher)</p>
+    <p>flex-grow: 0 (não pode crescer, apenas atribuindo o valor "1" que ficará permitido ele crescer)</p>
+    <p>Para que os elementos usem toda sua elasticidade use: <strong>flex-shrink: 1; e flex-grow: 1; </strong>isso cria elementos autamente flúidos, permitindo qeu cresçam e diminua a vontade </p>
+</body>
+</html>
