@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        div.container{
+            background-color: orange;
+            display: flex;
+        
+        }
+        div.item{
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex:auto;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+       
+    </div>
+    <h1>handshort flex</h1>
+    <p>O Handshort utilizado no felx será sempre na seguinte oredem: grow shrink basis, ficando dessa forma: <strong>flex: 0 1 150px;</strong> sendo o primeiro item o <strong>flex-grow</strong> o segundo o <strong>flex-shrink</strong> e o terceiro o <strong>flex-basis</strong></p>
+    <ul>
+        <li><p>flex: 0 1 auto é o mesmo que flex: intial;</p></li>
+        <li><p>flex: 0 0 auto é o mesmo que flex:none;</p></li>
+        <li><p>o flex: 1 1 auto é o mesmo que flex:auto;</p></li>
+    </ul>
+</body>
+</html>
