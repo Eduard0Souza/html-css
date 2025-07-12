@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedades do item grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template: repeat(6, 100px)/ repeat(8, 1fr);
+            border: 3px solid orange;
+            gap: 5px;
+            padding: 5px;
+            margin-bottom: 25px;
+            
+        }
+        .cx1{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: blue;
+            align-content: center;
+           
+            text-align: center;
+        }
+
+        .cx2{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 3;
+            grid-column-end: -1;
+            background-color: red;
+            text-align: center;
+            align-content: center;
+        
+
+        }
+        .cx3{
+            grid-row-start: 2;
+            grid-row-end: 6;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: rgb(255, 251, 0);
+            align-content: center;
+            text-align: center;
+        }
+        .cx4{
+            grid-row-start: 2;
+            grid-row-end: 6;
+            grid-column-start: 3;
+            grid-column-end: -2;
+            background-color: rgba(0, 255, 64, 0.829);
+            text-align: center;
+            align-content: center;
+        }
+        .cx5{
+            grid-row-start: 2;
+            grid-row-end: 6;
+            grid-column-start: 8;
+            grid-column-end: -1;
+            background-color: rgb(183, 0, 255);
+            text-align: center;
+            align-content: center;
+        }
+        .cx6{
+            grid-row-start: 6;
+            grid-row-end: 7;
+            grid-column-start: 1;
+            grid-column-end: -1;
+            background-color: rgba(0, 0, 0, 0.575);
+            text-align: center;
+            align-content: center;}
+            
+        
+    </style>
+
+</head>
+<body>
+    <h1>Propriedades dos itens no Grid</h1>
+    <div class="container">
+        <div class="cx1">menu</div>
+        <div class="cx2">cabeçalho</div>
+        <div class="cx3">aside</div>
+        <div class="cx4">main</div>
+        <div class="cx5">comentarios</div>
+        <div class="cx6">roda-pé</div>
+        
+    </div>
+    <head>Propriedades do itens do Grid Layout</head>
+    <ul>
+        <li>grid-column-start: para dizer em qual conluna começa</li>
+        <li>grid-column-end: para dizer em qual conluna termina</li>
+        <li>grid-row-start: para dizer em qual linha começa</li>
+        <li>grid-row-end: para mostrar em linha termina</li>
+    </ul>
+</body>
+</html>
