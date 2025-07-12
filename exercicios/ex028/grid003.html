@@ -50,7 +50,9 @@
             grid-row-end: 6;
             grid-column-start: 3;
             grid-column-end: -2;
-            background-color: rgba(0, 255, 64, 0.829);
+            background-image: url(imagens/tela\ explicando.png);
+            
+            background-size: cover;
             text-align: center;
             align-content: center;
         }
@@ -70,7 +72,11 @@
             grid-column-end: -1;
             background-color: rgba(0, 0, 0, 0.575);
             text-align: center;
-            align-content: center;}
+            
+            
+
+        }
+            
             
         
     </style>
@@ -82,7 +88,7 @@
         <div class="cx1">menu</div>
         <div class="cx2">cabeçalho</div>
         <div class="cx3">aside</div>
-        <div class="cx4">main</div>
+        <div class="cx4"></div>
         <div class="cx5">comentarios</div>
         <div class="cx6">roda-pé</div>
         
@@ -93,6 +99,11 @@
         <li>grid-column-end: para dizer em qual conluna termina</li>
         <li>grid-row-start: para dizer em qual linha começa</li>
         <li>grid-row-end: para mostrar em linha termina</li>
+        <li>span: espande a area por toda extensão solicitada</li>
+        <li>grid-row: simplifica as declarações de grid-rows, em vez de usar start e end, use apenas valores, assim: grid-row: 2 / 2 </li>
+        <li>grid-column:  funciona igual o grid-row, simplificando a declaração</li>
+        <li>grid-area: simplifica mais ainda, faz as declarações tanto das rows quanto das columns, assim: grid-area: 1 / 1 / 2 / 2; a declaração é grid-row-start, grid-column-start,grid-row-end, grid-column-end</li>
     </ul>
+
 </body>
 </html>
