@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid e Flex</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; 
+        }
+        .container{
+            padding: 20px;;
+            width: 80%;
+            height: 800px;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between;
+            align-items: center;
+            background-color: lightgray;
+           
+        }
+        .item{
+            width: 150px;
+            height: 150px;
+            background-color: rgb(8, 168, 221);
+        }
+        .item:nth-child(even){
+            background-color: rgb(221, 8, 168);
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+
+        </div>
+        <div class="item">
+
+        </div>
+        <div class="item">
+
+        </div>
+        <div class="item">
+
+        </div>
+        <div class="item">
+
+        </div>
+    </div>
+    
+</body>
+</html>
